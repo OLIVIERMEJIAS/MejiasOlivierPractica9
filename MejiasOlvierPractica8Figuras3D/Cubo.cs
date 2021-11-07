@@ -10,7 +10,7 @@ namespace MejiasOlvierPractica8Figuras3D
     {
         double lado;
 
-        public Cubo(double lad) : base()
+        public Cubo(double lad,string tipo) : base(tipo)
         {
             lado = lad;
            
@@ -24,6 +24,10 @@ namespace MejiasOlvierPractica8Figuras3D
         public override void calcularVolumen()
         {
             volumenAsignar(Math.Pow(lado, 3));
+        }
+        public double ladoConsultar()
+        {
+            return lado;
         }
     }
 }

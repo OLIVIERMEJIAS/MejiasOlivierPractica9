@@ -10,7 +10,7 @@ namespace MejiasOlvierPractica8Figuras3D
     {
         double radio;
 
-        public Esfera(double rad) : base()
+        public Esfera(double rad, string tipo) : base(tipo)
         {
             radio = rad;
         }
@@ -25,6 +25,10 @@ namespace MejiasOlvierPractica8Figuras3D
             volumenAsignar((4 * System.Math.PI * Math.Pow(radio, 3)) / 3);
         }
 
-        
+        public double radioConsultar()
+        {
+            return radio;
+        }
+
     }
 }

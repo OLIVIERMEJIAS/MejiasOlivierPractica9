@@ -30,25 +30,25 @@ namespace MejiasOlvierPractica8Figuras3D
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tslArea = new System.Windows.Forms.ToolStripLabel();
+            this.tslAreaVol = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.tslVolumen = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tslSalir = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.figuras3DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.esferaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pirámideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tetraedroRegularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.octaedroRegularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cuboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cilindroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ortoedroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prismaRectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.conoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsCil = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsCon = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsCub = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsEsfera = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsPir = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsPris = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsOct = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsOrt = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsTet = new System.Windows.Forms.ToolStripMenuItem();
             this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsVerHist = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -56,9 +56,8 @@ namespace MejiasOlvierPractica8Figuras3D
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tslArea,
+            this.tslAreaVol,
             this.toolStripSeparator2,
-            this.tslVolumen,
             this.toolStripSeparator1,
             this.tslSalir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
@@ -67,22 +66,16 @@ namespace MejiasOlvierPractica8Figuras3D
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // tslArea
+            // tslAreaVol
             // 
-            this.tslArea.Name = "tslArea";
-            this.tslArea.Size = new System.Drawing.Size(77, 22);
-            this.tslArea.Text = "Calcular Área";
+            this.tslAreaVol.Name = "tslAreaVol";
+            this.tslAreaVol.Size = new System.Drawing.Size(136, 22);
+            this.tslAreaVol.Text = "Calcular Área y Volumen";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // tslVolumen
-            // 
-            this.tslVolumen.Name = "tslVolumen";
-            this.tslVolumen.Size = new System.Drawing.Size(100, 22);
-            this.tslVolumen.Text = "Calcular Volumen";
             // 
             // toolStripSeparator1
             // 
@@ -125,78 +118,96 @@ namespace MejiasOlvierPractica8Figuras3D
             // figuras3DToolStripMenuItem
             // 
             this.figuras3DToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.esferaToolStripMenuItem,
-            this.pirámideToolStripMenuItem,
-            this.tetraedroRegularToolStripMenuItem,
-            this.octaedroRegularToolStripMenuItem,
-            this.cuboToolStripMenuItem,
-            this.cilindroToolStripMenuItem,
-            this.ortoedroToolStripMenuItem,
-            this.prismaRectoToolStripMenuItem,
-            this.conoToolStripMenuItem});
+            this.mnsCil,
+            this.mnsCon,
+            this.mnsCub,
+            this.mnsEsfera,
+            this.mnsPir,
+            this.mnsPris,
+            this.mnsOct,
+            this.mnsOrt,
+            this.mnsTet});
             this.figuras3DToolStripMenuItem.Name = "figuras3DToolStripMenuItem";
             this.figuras3DToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.figuras3DToolStripMenuItem.Text = "Figuras 3D";
             // 
-            // esferaToolStripMenuItem
+            // mnsCil
             // 
-            this.esferaToolStripMenuItem.Name = "esferaToolStripMenuItem";
-            this.esferaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.esferaToolStripMenuItem.Text = "Esfera";
+            this.mnsCil.Name = "mnsCil";
+            this.mnsCil.Size = new System.Drawing.Size(166, 22);
+            this.mnsCil.Text = "Cilindro";
+            this.mnsCil.Click += new System.EventHandler(this.mnsCil_Click);
             // 
-            // pirámideToolStripMenuItem
+            // mnsCon
             // 
-            this.pirámideToolStripMenuItem.Name = "pirámideToolStripMenuItem";
-            this.pirámideToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pirámideToolStripMenuItem.Text = "Pirámide";
+            this.mnsCon.Name = "mnsCon";
+            this.mnsCon.Size = new System.Drawing.Size(166, 22);
+            this.mnsCon.Text = "Cono";
+            this.mnsCon.Click += new System.EventHandler(this.mnsCon_Click);
             // 
-            // tetraedroRegularToolStripMenuItem
+            // mnsCub
             // 
-            this.tetraedroRegularToolStripMenuItem.Name = "tetraedroRegularToolStripMenuItem";
-            this.tetraedroRegularToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tetraedroRegularToolStripMenuItem.Text = "Tetraedro Regular";
+            this.mnsCub.Name = "mnsCub";
+            this.mnsCub.Size = new System.Drawing.Size(166, 22);
+            this.mnsCub.Text = "Cubo";
+            this.mnsCub.Click += new System.EventHandler(this.mnsCub_Click);
             // 
-            // octaedroRegularToolStripMenuItem
+            // mnsEsfera
             // 
-            this.octaedroRegularToolStripMenuItem.Name = "octaedroRegularToolStripMenuItem";
-            this.octaedroRegularToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.octaedroRegularToolStripMenuItem.Text = "Octaedro Regular";
+            this.mnsEsfera.Name = "mnsEsfera";
+            this.mnsEsfera.Size = new System.Drawing.Size(166, 22);
+            this.mnsEsfera.Text = "Esfera";
+            this.mnsEsfera.Click += new System.EventHandler(this.mnsEsfera_Click);
             // 
-            // cuboToolStripMenuItem
+            // mnsPir
             // 
-            this.cuboToolStripMenuItem.Name = "cuboToolStripMenuItem";
-            this.cuboToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cuboToolStripMenuItem.Text = "Cubo";
+            this.mnsPir.Name = "mnsPir";
+            this.mnsPir.Size = new System.Drawing.Size(166, 22);
+            this.mnsPir.Text = "Pirámide";
+            this.mnsPir.Click += new System.EventHandler(this.mnsPir_Click);
             // 
-            // cilindroToolStripMenuItem
+            // mnsPris
             // 
-            this.cilindroToolStripMenuItem.Name = "cilindroToolStripMenuItem";
-            this.cilindroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cilindroToolStripMenuItem.Text = "Cilindro";
+            this.mnsPris.Name = "mnsPris";
+            this.mnsPris.Size = new System.Drawing.Size(166, 22);
+            this.mnsPris.Text = "Prisma Recto";
+            this.mnsPris.Click += new System.EventHandler(this.mnsPris_Click);
             // 
-            // ortoedroToolStripMenuItem
+            // mnsOct
             // 
-            this.ortoedroToolStripMenuItem.Name = "ortoedroToolStripMenuItem";
-            this.ortoedroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ortoedroToolStripMenuItem.Text = "Ortoedro";
+            this.mnsOct.Name = "mnsOct";
+            this.mnsOct.Size = new System.Drawing.Size(166, 22);
+            this.mnsOct.Text = "Octaedro Regular";
+            this.mnsOct.Click += new System.EventHandler(this.mnsOct_Click);
             // 
-            // prismaRectoToolStripMenuItem
+            // mnsOrt
             // 
-            this.prismaRectoToolStripMenuItem.Name = "prismaRectoToolStripMenuItem";
-            this.prismaRectoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.prismaRectoToolStripMenuItem.Text = "Prisma Recto";
+            this.mnsOrt.Name = "mnsOrt";
+            this.mnsOrt.Size = new System.Drawing.Size(166, 22);
+            this.mnsOrt.Text = "Ortoedro";
+            this.mnsOrt.Click += new System.EventHandler(this.mnsOrt_Click);
             // 
-            // conoToolStripMenuItem
+            // mnsTet
             // 
-            this.conoToolStripMenuItem.Name = "conoToolStripMenuItem";
-            this.conoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.conoToolStripMenuItem.Text = "Cono";
+            this.mnsTet.Name = "mnsTet";
+            this.mnsTet.Size = new System.Drawing.Size(166, 22);
+            this.mnsTet.Text = "Tetraedro Regular";
+            this.mnsTet.Click += new System.EventHandler(this.mnsTet_Click);
             // 
             // historialToolStripMenuItem
             // 
+            this.historialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsVerHist});
             this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
             this.historialToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.historialToolStripMenuItem.Text = "Historial";
+            // 
+            // mnsVerHist
+            // 
+            this.mnsVerHist.Name = "mnsVerHist";
+            this.mnsVerHist.Size = new System.Drawing.Size(180, 22);
+            this.mnsVerHist.Text = "Ver Historial";
+            this.mnsVerHist.Click += new System.EventHandler(this.mnsVerHist_Click);
             // 
             // frmFiguras3D
             // 
@@ -221,25 +232,25 @@ namespace MejiasOlvierPractica8Figuras3D
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel tslArea;
+        private System.Windows.Forms.ToolStripLabel tslAreaVol;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem figuras3DToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem esferaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pirámideToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tetraedroRegularToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem octaedroRegularToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cuboToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cilindroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ortoedroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem prismaRectoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem conoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsEsfera;
+        private System.Windows.Forms.ToolStripMenuItem mnsPir;
+        private System.Windows.Forms.ToolStripMenuItem mnsTet;
+        private System.Windows.Forms.ToolStripMenuItem mnsOct;
+        private System.Windows.Forms.ToolStripMenuItem mnsCub;
+        private System.Windows.Forms.ToolStripMenuItem mnsCil;
+        private System.Windows.Forms.ToolStripMenuItem mnsOrt;
+        private System.Windows.Forms.ToolStripMenuItem mnsPris;
+        private System.Windows.Forms.ToolStripMenuItem mnsCon;
         private System.Windows.Forms.ToolStripMenuItem historialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripLabel tslVolumen;
         private System.Windows.Forms.ToolStripLabel tslSalir;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem mnsVerHist;
     }
 }
 

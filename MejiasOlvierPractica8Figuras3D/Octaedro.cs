@@ -10,7 +10,7 @@ namespace MejiasOlvierPractica8Figuras3D
     {
         double arista;
 
-        public Octaedro(double arist) : base()
+        public Octaedro(double arist,string tipo) : base(tipo)
         {
             arista = arist;
 
@@ -24,6 +24,11 @@ namespace MejiasOlvierPractica8Figuras3D
         public override void calcularVolumen()
         {
             volumenAsignar((Math.Sqrt(2) * Math.Pow(arista, 2)) / 3);
+        }
+
+        public double aristaConsultar()
+        {
+            return arista;
         }
 
     }

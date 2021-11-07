@@ -8,13 +8,13 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     class Prisma : Figura
     {
-        double lado;
+        double ladoBase;
         double apotema;
         double altura;
 
-        public Prisma(double lad, double apot, double alt) : base()
+        public Prisma(double lad, double apot, double alt,string tipo) : base(tipo)
         {
-            lado = lad;
+            ladoBase = lad;
             apotema = apot;
             altura = alt;
 
@@ -22,14 +22,29 @@ namespace MejiasOlvierPractica8Figuras3D
 
         public override void calcularArea()
         {
-            double periBase = 5 * lado;
+            double periBase = 5 * ladoBase;
             areaAsignar(periBase * (altura + apotema));
         }
 
         public override void calcularVolumen()
         {
-            double areaBase = (5 * lado * apotema) / 2;
+            double areaBase = (5 * ladoBase * apotema) / 2;
             volumenAsignar(areaBase * altura);
+        }
+
+        public double apotemaConsultar()
+        {
+            return apotema;
+        }
+
+        public double ladoBaseConsultar()
+        {
+            return ladoBase;
+        }
+
+        public double alturaConsultar()
+        {
+            return altura;
         }
     }
 }

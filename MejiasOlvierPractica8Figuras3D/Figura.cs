@@ -10,12 +10,14 @@ namespace MejiasOlvierPractica8Figuras3D
     {
         double area;
         double volumen;
+        string tipo;
 
 
-        public Figura()
+        public Figura(string tip)
         {
             area = 0;
             volumen = 0;
+            tipo = tip;
         }
 
         public abstract void calcularArea();
@@ -24,7 +26,7 @@ namespace MejiasOlvierPractica8Figuras3D
 
         public virtual string mensajeCalculos()
         {
-            return $"El área de su figura es: {area} y el volumen es: {volumen}";
+            return $"El área de su figura es: {Math.Round(area,2)} cm2 y el volumen es : {Math.Round(volumen,2)} cm3";
         }
 
         public double areaConsultar()
@@ -36,6 +38,13 @@ namespace MejiasOlvierPractica8Figuras3D
         {
             return volumen;
         }
+
+        public string tipoConsultar()
+        {
+            return tipo;
+        }
+
+
 
         public void areaAsignar(double ar)
         {

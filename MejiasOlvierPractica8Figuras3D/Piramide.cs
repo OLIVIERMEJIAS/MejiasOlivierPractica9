@@ -13,7 +13,8 @@ namespace MejiasOlvierPractica8Figuras3D
         double altura;
         double ladoBase;
 
-        public Piramide(double apoB, double apoL, double alt, double ladoB) : base()
+        public Piramide(double apoB, double apoL, double alt, 
+            double ladoB,string tipo) : base(tipo)
         {
             apotemaBase = apoB;
             apotemaLado = apoL;
@@ -31,6 +32,23 @@ namespace MejiasOlvierPractica8Figuras3D
         {
             double areaBase = Math.Pow(ladoBase,2);
             volumenAsignar((areaBase * altura) / 3);
+        }
+
+        public double apotemaBaseConsultar()
+        {
+            return apotemaBase;
+        }
+        public double apotemaLadoConsultar()
+        {
+            return apotemaLado;
+        }
+        public double alturaConsultar()
+        {
+            return altura;
+        }
+        public double ladoBaseConsultar()
+        {
+            return ladoBase;
         }
     }
 }

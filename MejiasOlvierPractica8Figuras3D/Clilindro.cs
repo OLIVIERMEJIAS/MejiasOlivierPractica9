@@ -11,7 +11,7 @@ namespace MejiasOlvierPractica8Figuras3D
         double radio;
         double altura;
 
-        public Cilindro(double rad,double alt) : base()
+        public Cilindro(double rad,double alt,string tipo) : base(tipo)
         {
             radio = rad;
             altura = alt;
@@ -27,5 +27,14 @@ namespace MejiasOlvierPractica8Figuras3D
             volumenAsignar(Math.PI * Math.Pow(radio,2) * altura);
         }
 
+        public double radioConsultar()
+        {
+            return radio;
+        }
+
+        public double alturaConsultar()
+        {
+            return altura;
+        }
     }
 }

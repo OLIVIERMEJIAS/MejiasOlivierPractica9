@@ -111,6 +111,13 @@
     <Compile Include="frmTetraedro.Designer.cs">
       <DependentUpon>frmTetraedro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="frmHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorial.Designer.cs">
+      <DependentUpon>frmHistorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Octaedro.cs" />
     <Compile Include="Ortoedro.cs" />
     <Compile Include="Piramide.cs" />
@@ -118,8 +125,38 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tetraedro.cs" />
+    <EmbeddedResource Include="frmCilindro.resx">
+      <DependentUpon>frmCilindro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCono.resx">
+      <DependentUpon>frmCono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCubo.resx">
+      <DependentUpon>frmCubo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEsfera.resx">
+      <DependentUpon>frmEsfera.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFiguras3D.resx">
       <DependentUpon>frmFiguras3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOctaedro.resx">
+      <DependentUpon>frmOctaedro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrtoedro.resx">
+      <DependentUpon>frmOrtoedro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPiramide.resx">
+      <DependentUpon>frmPiramide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrisma.resx">
+      <DependentUpon>frmPrisma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTetraedro.resx">
+      <DependentUpon>frmTetraedro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorial.resx">
+      <DependentUpon>frmHistorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
