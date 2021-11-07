@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace MejiasOlvierPractica8Figuras3D
 {
-    class Tetraedro
+    class Tetraedro : Figura
     {
-    }
+        double arista;
+        
+
+        public Tetraedro(double arist) : base()
+        {
+            arista = arist;
+
+        }
+
+        public override void calcularArea()
+        {
+            areaAsignar(Math.Sqrt(3) * Math.Pow(arista,2));
+        }
+
+        public override void calcularVolumen()
+        {
+            volumenAsignar((Math.Sqrt(2) *  Math.Pow(arista,3)) / 12);
+        }
 }

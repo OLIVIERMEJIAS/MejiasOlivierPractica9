@@ -30,6 +30,11 @@ namespace MejiasOlvierPractica8Figuras3D
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tslArea = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tslVolumen = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tslSalir = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,11 +49,6 @@ namespace MejiasOlvierPractica8Figuras3D
             this.prismaRectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tslArea = new System.Windows.Forms.ToolStripLabel();
-            this.tslVolumen = new System.Windows.Forms.ToolStripLabel();
-            this.tslSalir = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,35 @@ namespace MejiasOlvierPractica8Figuras3D
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tslArea
+            // 
+            this.tslArea.Name = "tslArea";
+            this.tslArea.Size = new System.Drawing.Size(77, 22);
+            this.tslArea.Text = "Calcular Área";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tslVolumen
+            // 
+            this.tslVolumen.Name = "tslVolumen";
+            this.tslVolumen.Size = new System.Drawing.Size(100, 22);
+            this.tslVolumen.Text = "Calcular Volumen";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tslSalir
+            // 
+            this.tslSalir.ForeColor = System.Drawing.Color.Red;
+            this.tslSalir.Name = "tslSalir";
+            this.tslSalir.Size = new System.Drawing.Size(29, 22);
+            this.tslSalir.Text = "Salir";
             // 
             // menuStrip1
             // 
@@ -90,7 +119,7 @@ namespace MejiasOlvierPractica8Figuras3D
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // figuras3DToolStripMenuItem
@@ -169,35 +198,6 @@ namespace MejiasOlvierPractica8Figuras3D
             this.historialToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.historialToolStripMenuItem.Text = "Historial";
             // 
-            // tslArea
-            // 
-            this.tslArea.Name = "tslArea";
-            this.tslArea.Size = new System.Drawing.Size(77, 22);
-            this.tslArea.Text = "Calcular Área";
-            // 
-            // tslVolumen
-            // 
-            this.tslVolumen.Name = "tslVolumen";
-            this.tslVolumen.Size = new System.Drawing.Size(100, 22);
-            this.tslVolumen.Text = "Calcular Volumen";
-            // 
-            // tslSalir
-            // 
-            this.tslSalir.ForeColor = System.Drawing.Color.Red;
-            this.tslSalir.Name = "tslSalir";
-            this.tslSalir.Size = new System.Drawing.Size(29, 22);
-            this.tslSalir.Text = "Salir";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
             // frmFiguras3D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +205,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmFiguras3D";
             this.Text = "ÁREA - VOLUMEN DE FIGURAS 3D";
