@@ -20,7 +20,15 @@ namespace MejiasOlvierPractica8Figuras3D
 
 
       
-
+        /// <summary>
+        /// Construye y llena el ListView de este formulario, 
+        /// según estén con al menos 1 elemento cada arraylist de 
+        /// cada historial de cada figura, en todas las figuras se
+        /// muestra por item, tipo, área, volumen y según cada figura
+        /// en específico el números de datos que requirieron los cálculos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmHistorial_Load(object sender, EventArgs e)
         {
             lvwHistorial.Items.Clear();

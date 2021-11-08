@@ -35,6 +35,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.txtArOct = new System.Windows.Forms.TextBox();
             this.txtResulOct = new System.Windows.Forms.TextBox();
             this.btnOct = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -88,11 +89,23 @@ namespace MejiasOlvierPractica8Figuras3D
             this.btnOct.UseVisualStyleBackColor = true;
             this.btnOct.Click += new System.EventHandler(this.btnOct_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label4.Location = new System.Drawing.Point(124, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(512, 16);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmOctaedro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnOct);
             this.Controls.Add(this.txtResulOct);
             this.Controls.Add(this.txtArOct);
@@ -100,7 +113,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmOctaedro";
-            this.Text = "frmOctaedro";
+            this.Text = "OCTAEDRO REGULAR";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +127,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.TextBox txtArOct;
         private System.Windows.Forms.TextBox txtResulOct;
         private System.Windows.Forms.Button btnOct;
+        private System.Windows.Forms.Label label4;
     }
 }

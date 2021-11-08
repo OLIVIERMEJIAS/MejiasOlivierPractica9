@@ -100,7 +100,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.txtLadCub);
             this.Controls.Add(this.btnCubo);
             this.Name = "frmCubo";
-            this.Text = "frmCubo";
+            this.Text = "CUBO";
             this.ResumeLayout(false);
             this.PerformLayout();
 

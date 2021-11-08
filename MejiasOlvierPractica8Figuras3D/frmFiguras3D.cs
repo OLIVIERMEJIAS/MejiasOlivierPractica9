@@ -12,6 +12,7 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     public partial class frmFiguras3D : Form
     {
+        //instancias de todos los formularios que usa la aplicación
         frmCilindro cili;
         frmCono cono;
         frmCubo cubo;
@@ -28,6 +29,11 @@ namespace MejiasOlvierPractica8Figuras3D
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Crea un formulario para la esfera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsEsfera_Click(object sender, EventArgs e)
         {
            
@@ -42,51 +48,102 @@ namespace MejiasOlvierPractica8Figuras3D
             else
                 esfe.Activate();
         }
+
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Esfera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarEsfera(object sender, FormClosedEventArgs e)
         {
                 esfe = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Piramide
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarPiramide(object sender, FormClosedEventArgs e)
         {
             pira = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Tetraedro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarTetraedro(object sender, FormClosedEventArgs e)
         {
             tetra = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Ortoedro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarOrtoedro(object sender, FormClosedEventArgs e)
         {
             orto = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Octaedro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarOctaedro(object sender, FormClosedEventArgs e)
         {
             octa = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Cilindro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarCilindro(object sender, FormClosedEventArgs e)
         {
             cili = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Cubo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarCubo(object sender, FormClosedEventArgs e)
         {
             cubo = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Prisma
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarPrisma(object sender, FormClosedEventArgs e)
         {
             pris = null;
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Cono
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarCono(object sender, FormClosedEventArgs e)
         {
             cono = null;
         }
 
+        /// <summary>
+        /// Crea un formulario para la pirámide
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsPir_Click(object sender, EventArgs e)
         {
             if (pira == null)
@@ -101,6 +158,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 pira.Activate();
         }
 
+        /// <summary>
+        /// Crea un formulario para el tetraedro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsTet_Click(object sender, EventArgs e)
         {
             if (tetra == null)
@@ -115,6 +177,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 tetra.Activate();
         }
 
+        /// <summary>
+        /// Crea un formulario para el octaedro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsOct_Click(object sender, EventArgs e)
         {
             if (octa == null)
@@ -129,6 +196,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 octa.Activate();
         }
 
+        /// <summary>
+        /// Crea un formulario para el cubo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsCub_Click(object sender, EventArgs e)
         {
             if (cubo == null)
@@ -143,6 +215,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 cubo.Activate();
         }
 
+        /// <summary>
+        /// Crea un formulario para el cilindro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsCil_Click(object sender, EventArgs e)
         {
             if (cili == null)
@@ -157,6 +234,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 cili.Activate();
         }
 
+        /// <summary>
+        /// Crea un formulario para el ortoedro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsOrt_Click(object sender, EventArgs e)
         {
             if (orto == null)
@@ -171,6 +253,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 orto.Activate();
         }
 
+        /// <summary>
+        /// Crea un formulario para el prisma
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsPris_Click(object sender, EventArgs e)
         {
             if (pris == null)
@@ -185,6 +272,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 pris.Activate();
         }
 
+        /// <summary>
+        /// Crea un formulario para el cono
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsCon_Click(object sender, EventArgs e)
         {
             if (cono == null)
@@ -199,11 +291,21 @@ namespace MejiasOlvierPractica8Figuras3D
                 cono.Activate();
         }
 
+        /// <summary>
+        /// Aporta al evento FormClosed del formulario Historial
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cerrarHisto(object sender, FormClosedEventArgs e)
         {
             histo = null;
         }
 
+        /// <summary>
+        /// Crea un formulario para el historial
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mnsVerHist_Click(object sender, EventArgs e)
         {
             if (histo == null)
@@ -216,6 +318,55 @@ namespace MejiasOlvierPractica8Figuras3D
             }
             else
                 histo.Activate();
+        }
+        /// <summary>
+        /// Llama a la ejecución del evento click del botón calcular
+        /// de cada formulario de uan figura en específico que su 
+        /// formulario no sea null
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tslAreaVol_Click(object sender, EventArgs e)
+        {
+            if (cili != null)
+                cili.btnCli_Click(sender, e);
+            else if (cono != null)
+                cono.btnCono_Click(sender, e);
+            else if (cubo != null)
+                cubo.btnCubo_Click(sender, e);
+            else if (esfe != null)
+                esfe.btnEsfera_Click(sender, e);
+            else if (pira != null)
+                pira.btnPiramide_Click(sender, e);
+            else if (pris != null)
+                pris.btnPrisma_Click(sender, e);
+            else if (octa != null)
+                octa.btnOct_Click(sender, e);
+            else if (orto != null)
+                orto.btnOrt_Click(sender, e);
+            else if (tetra != null)
+                tetra.btnTetra_Click(sender, e);
+
+
+        }
+        /// <summary>
+        /// Cierra la aplicación desde el menú de herramientas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tslSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        /// <summary>
+        /// Cierra la aplicación desde la barra de menú
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void mnsSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

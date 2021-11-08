@@ -41,12 +41,13 @@ namespace MejiasOlvierPractica8Figuras3D
             this.txtAltPir = new System.Windows.Forms.TextBox();
             this.txtLadoBasePir = new System.Windows.Forms.TextBox();
             this.btnPiramide = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(359, 64);
+            this.label1.Location = new System.Drawing.Point(359, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 0;
@@ -142,11 +143,23 @@ namespace MejiasOlvierPractica8Figuras3D
             this.btnPiramide.UseVisualStyleBackColor = true;
             this.btnPiramide.Click += new System.EventHandler(this.btnPiramide_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label7.Location = new System.Drawing.Point(135, 67);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(512, 16);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmPiramide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnPiramide);
             this.Controls.Add(this.txtLadoBasePir);
             this.Controls.Add(this.txtAltPir);
@@ -160,7 +173,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmPiramide";
-            this.Text = "frmPiramide";
+            this.Text = "PIRÁMIDE";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +193,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.TextBox txtAltPir;
         private System.Windows.Forms.TextBox txtLadoBasePir;
         private System.Windows.Forms.Button btnPiramide;
+        private System.Windows.Forms.Label label7;
     }
 }

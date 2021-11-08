@@ -35,12 +35,13 @@ namespace MejiasOlvierPractica8Figuras3D
             this.txtRadEsf = new System.Windows.Forms.TextBox();
             this.txtResulEsf = new System.Windows.Forms.TextBox();
             this.btnEsfera = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(369, 82);
+            this.label1.Location = new System.Drawing.Point(369, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
@@ -88,11 +89,23 @@ namespace MejiasOlvierPractica8Figuras3D
             this.btnEsfera.UseVisualStyleBackColor = true;
             this.btnEsfera.Click += new System.EventHandler(this.btnEsfera_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label4.Location = new System.Drawing.Point(131, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(512, 16);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmEsfera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnEsfera);
             this.Controls.Add(this.txtResulEsf);
             this.Controls.Add(this.txtRadEsf);
@@ -100,7 +113,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmEsfera";
-            this.Text = "frmEsfera";
+            this.Text = "ESFERA";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +127,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.TextBox txtRadEsf;
         private System.Windows.Forms.TextBox txtResulEsf;
         private System.Windows.Forms.Button btnEsfera;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -37,6 +37,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCli
@@ -106,11 +107,23 @@ namespace MejiasOlvierPractica8Figuras3D
             this.label4.TabIndex = 7;
             this.label4.Text = "RESULTADO";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label5.Location = new System.Drawing.Point(116, 66);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(512, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmCilindro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -120,7 +133,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.txtAltCil);
             this.Controls.Add(this.btnCli);
             this.Name = "frmCilindro";
-            this.Text = "frmCilindro";
+            this.Text = "CILINDRO";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +149,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

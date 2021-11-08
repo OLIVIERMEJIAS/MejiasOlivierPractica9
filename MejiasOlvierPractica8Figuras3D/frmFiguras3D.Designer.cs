@@ -36,7 +36,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.tslSalir = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.figuras3DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsCil = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsCon = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +71,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.tslAreaVol.Name = "tslAreaVol";
             this.tslAreaVol.Size = new System.Drawing.Size(136, 22);
             this.tslAreaVol.Text = "Calcular Área y Volumen";
+            this.tslAreaVol.Click += new System.EventHandler(this.tslAreaVol_Click);
             // 
             // toolStripSeparator2
             // 
@@ -88,6 +89,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.tslSalir.Name = "tslSalir";
             this.tslSalir.Size = new System.Drawing.Size(29, 22);
             this.tslSalir.Text = "Salir";
+            this.tslSalir.Click += new System.EventHandler(this.tslSalir_Click);
             // 
             // menuStrip1
             // 
@@ -104,16 +106,17 @@ namespace MejiasOlvierPractica8Figuras3D
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem});
+            this.mnsSalir});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
-            // salirToolStripMenuItem
+            // mnsSalir
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.mnsSalir.Name = "mnsSalir";
+            this.mnsSalir.Size = new System.Drawing.Size(96, 22);
+            this.mnsSalir.Text = "Salir";
+            this.mnsSalir.Click += new System.EventHandler(this.mnsSalir_Click);
             // 
             // figuras3DToolStripMenuItem
             // 
@@ -205,7 +208,7 @@ namespace MejiasOlvierPractica8Figuras3D
             // mnsVerHist
             // 
             this.mnsVerHist.Name = "mnsVerHist";
-            this.mnsVerHist.Size = new System.Drawing.Size(180, 22);
+            this.mnsVerHist.Size = new System.Drawing.Size(137, 22);
             this.mnsVerHist.Text = "Ver Historial";
             this.mnsVerHist.Click += new System.EventHandler(this.mnsVerHist_Click);
             // 
@@ -235,7 +238,7 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.ToolStripLabel tslAreaVol;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsSalir;
         private System.Windows.Forms.ToolStripMenuItem figuras3DToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnsEsfera;
         private System.Windows.Forms.ToolStripMenuItem mnsPir;

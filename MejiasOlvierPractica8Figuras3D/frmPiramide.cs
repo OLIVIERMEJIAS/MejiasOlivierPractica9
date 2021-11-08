@@ -18,7 +18,20 @@ namespace MejiasOlvierPractica8Figuras3D
             InitializeComponent();
         }
 
-        private void btnPiramide_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Calcula el área y volumen de la pirámide, basados 
+        /// en la apotema de la base, apotema de una cara, la altura y
+        /// lado de la base de la figura, toma en cuenta 
+        /// excepciones. calcularArea y calcularVolumen, 
+        /// toman los datos que se guardan en el interior 
+        /// del objeto, los mcalculan y los guardan en los
+        /// atribuytos de area y volumen. Por último se usa el método: 
+        /// mensajeCalculos para enviar un mensaje desde la figura al 
+        /// TextBox de este formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void btnPiramide_Click(object sender, EventArgs e)
         {
             try
             {

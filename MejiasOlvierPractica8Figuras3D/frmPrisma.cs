@@ -18,7 +18,19 @@ namespace MejiasOlvierPractica8Figuras3D
             InitializeComponent();
         }
 
-        private void btnPrisma_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Calcula el área y volumen del prisma, basados 
+        /// en el lado de la base, la apotema de la base y la altura de la figura,
+        /// toma en cuenta excepciones. calcularArea y calcularVolumen, 
+        /// toman los datos que se guardan en el interior 
+        /// del objeto, los mcalculan y los guardan en los
+        /// atribuytos de area y volumen. Por último se usa el método: 
+        /// mensajeCalculos para enviar un mensaje desde la figura al 
+        /// TextBox de este formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void btnPrisma_Click(object sender, EventArgs e)
         {
             try
             {

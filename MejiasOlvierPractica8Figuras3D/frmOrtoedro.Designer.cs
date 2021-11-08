@@ -39,6 +39,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOrt
@@ -82,7 +83,7 @@ namespace MejiasOlvierPractica8Figuras3D
             // laber1
             // 
             this.laber1.AutoSize = true;
-            this.laber1.Location = new System.Drawing.Point(359, 45);
+            this.laber1.Location = new System.Drawing.Point(359, 23);
             this.laber1.Name = "laber1";
             this.laber1.Size = new System.Drawing.Size(69, 13);
             this.laber1.TabIndex = 5;
@@ -124,11 +125,23 @@ namespace MejiasOlvierPractica8Figuras3D
             this.label5.TabIndex = 9;
             this.label5.Text = "RESULTADO";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.Location = new System.Drawing.Point(150, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(512, 16);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmOrtoedro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -140,7 +153,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.txtResulOrt);
             this.Controls.Add(this.btnOrt);
             this.Name = "frmOrtoedro";
-            this.Text = "frmOrtoedro";
+            this.Text = "ORTOEDRO";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +171,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
     }
 }

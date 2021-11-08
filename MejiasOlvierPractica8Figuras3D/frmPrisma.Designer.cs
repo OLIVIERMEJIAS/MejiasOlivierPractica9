@@ -39,12 +39,13 @@ namespace MejiasOlvierPractica8Figuras3D
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(354, 32);
+            this.label1.Location = new System.Drawing.Point(354, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 26);
             this.label1.TabIndex = 0;
@@ -124,11 +125,23 @@ namespace MejiasOlvierPractica8Figuras3D
             this.label5.TabIndex = 10;
             this.label5.Text = "RESULTADO";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label6.Location = new System.Drawing.Point(117, 46);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(512, 16);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmPrisma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -140,7 +153,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.btnPrisma);
             this.Controls.Add(this.label1);
             this.Name = "frmPrisma";
-            this.Text = "frmPrisma";
+            this.Text = "PRISMA RECTO";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +171,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -39,6 +39,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.txtGenCon = new System.Windows.Forms.TextBox();
             this.txtRadCon = new System.Windows.Forms.TextBox();
             this.btnCono = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -124,11 +125,23 @@ namespace MejiasOlvierPractica8Figuras3D
             this.btnCono.UseVisualStyleBackColor = true;
             this.btnCono.Click += new System.EventHandler(this.btnCono_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label6.Location = new System.Drawing.Point(133, 52);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(512, 16);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmCono
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCono);
             this.Controls.Add(this.txtRadCon);
             this.Controls.Add(this.txtGenCon);
@@ -140,7 +153,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmCono";
-            this.Text = "frmCono";
+            this.Text = "CONO";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +171,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.TextBox txtGenCon;
         private System.Windows.Forms.TextBox txtRadCon;
         private System.Windows.Forms.Button btnCono;
+        private System.Windows.Forms.Label label6;
     }
 }

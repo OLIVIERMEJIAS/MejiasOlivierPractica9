@@ -35,6 +35,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.txtArTet = new System.Windows.Forms.TextBox();
             this.txtResulTet = new System.Windows.Forms.TextBox();
             this.btnTetra = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -88,11 +89,24 @@ namespace MejiasOlvierPractica8Figuras3D
             this.btnTetra.UseVisualStyleBackColor = true;
             this.btnTetra.Click += new System.EventHandler(this.btnTetra_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(125, 89);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(512, 16);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Por favor, ingrese datos sin espacios vacíos, use la unidad cm, use una coma para" +
+    " decimales";
+            // 
             // frmTetraedro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnTetra);
             this.Controls.Add(this.txtResulTet);
             this.Controls.Add(this.txtArTet);
@@ -100,7 +114,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmTetraedro";
-            this.Text = "frmTetraedro";
+            this.Text = "TETRAEDRO REGULAR";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +128,6 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.TextBox txtArTet;
         private System.Windows.Forms.TextBox txtResulTet;
         private System.Windows.Forms.Button btnTetra;
+        private System.Windows.Forms.Label label4;
     }
 }
