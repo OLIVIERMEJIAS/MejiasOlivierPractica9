@@ -8,12 +8,22 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     class Piramide : Figura
     {
-        //atributos
-        double apotemaBase;
-        double apotemaLado;
-        double altura;
-        double ladoBase;
-
+        /// <summary>
+        /// Propiedad del atributo double apotemaBase
+        /// </summary>
+        public double ApotemaBase { get; set; }
+        /// <summary>
+        /// Propiedad del atributo double apotemaLado
+        /// </summary>
+        public double ApotemaLado { get; set; }
+        /// <summary>
+        /// Propiedad del atributo double altura
+        /// </summary>
+        public double Altura { get; set; }
+        /// <summary>
+        /// Propiedad del atributo double ladoBase
+        /// </summary>
+        public double LadoBase { get; set; }
 
         /// <summary>
         /// Construye una instancia de tipo Piramide
@@ -30,64 +40,30 @@ namespace MejiasOlvierPractica8Figuras3D
         public Piramide(double apoB, double apoL, double alt, 
             double ladoB,string tipo) : base(tipo)
         {
-            apotemaBase = apoB;
-            apotemaLado = apoL;
-            altura = alt;
-            ladoBase = ladoB;
+            ApotemaBase = apoB;
+            ApotemaLado = apoL;
+            Altura = alt;
+            LadoBase = ladoB;
         }
 
         /// <summary>
         /// método sobreescrito para calcular el área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            double periBase = 4 * ladoBase;
-            areaAsignar((periBase * (apotemaBase + apotemaLado)) / 2 );
+            double periBase = 4 * LadoBase;
+            return (periBase * (ApotemaBase + ApotemaLado)) / 2 ;
         }
 
         /// <summary>
         /// método sobreescrito para calcular el volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            double areaBase = Math.Pow(ladoBase,2);
-            volumenAsignar((areaBase * altura) / 3);
+            double areaBase = Math.Pow(LadoBase,2);
+            return (areaBase * Altura) / 3;
         }
 
-        /// <summary>
-        /// Getter para la apotema de la base
-        /// </summary>
-        /// <returns>double apotemaBase</returns>
-        public double apotemaBaseConsultar()
-        {
-            return apotemaBase;
-        }
-
-        /// <summary>
-        /// Getter del lado de la apotema
-        /// </summary>
-        /// <returns>double apotemaLado</returns>
-        public double apotemaLadoConsultar()
-        {
-            return apotemaLado;
-        }
-
-        /// <summary>
-        /// Getter de la altura
-        /// </summary>
-        /// <returns>double altura</returns>
-        public double alturaConsultar()
-        {
-            return altura;
-        }
-
-        /// <summary>
-        /// Getter del lado de la base
-        /// </summary>
-        /// <returns>double ladoBase</returns>
-        public double ladoBaseConsultar()
-        {
-            return ladoBase;
-        }
+        
     }
 }

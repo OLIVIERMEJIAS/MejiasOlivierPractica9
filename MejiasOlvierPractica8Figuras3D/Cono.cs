@@ -32,24 +32,24 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <summary>
         /// sobreescribe el método de calcular el área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            areaAsignar((System.Math.PI * radio) *(radio * generatriz));
+            return (Math.PI * radio) *(radio * generatriz);
         }
 
         /// <summary>
         /// sobreescribe el método de calcular el volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            volumenAsignar((System.Math.PI * Math.Pow(radio, 2) * altura) / 3);
+            return (Math.PI * Math.Pow(radio, 2) * altura) / 3;
         }
 
         /// <summary>
         /// Getter del radio
         /// </summary>
         /// <returns>double radio</returns>
-        public double radioConsultar()
+        public double getRadio()
         {
             return radio;
         }
@@ -58,7 +58,7 @@ namespace MejiasOlvierPractica8Figuras3D
         /// Getter de la altura
         /// </summary>
         /// <returns>double altura</returns>
-        public double alturaConsultar()
+        public double getAltura()
         {
             return altura;
         }
@@ -67,7 +67,7 @@ namespace MejiasOlvierPractica8Figuras3D
         /// Getter de la generatriz
         /// </summary>
         /// <returns>double generatriz</returns>
-        public double generatrizConsultar()
+        public double getGeneratriz()
         {
             return generatriz;
         }

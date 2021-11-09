@@ -8,10 +8,19 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     class Prisma : Figura
     {
-        //atributos
-        double ladoBase;
-        double apotema;
-        double altura;
+        /// <summary>
+        /// Propiedad del atributo double ladoBase
+        /// </summary>
+        public double LadoBase { get; set; }
+        /// <summary>
+        /// Propiedad del atributo double apotema
+        /// </summary>
+        public double Apotema { get; set; }
+        /// <summary>
+        /// Propiedad del atributo double Altura
+        /// </summary>
+        public double Altura { get; set; }
+        
 
         /// <summary>
         /// Construye un objeto Prisma
@@ -25,55 +34,30 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <param name="tipo"></param>
         public Prisma(double lad, double apot, double alt,string tipo) : base(tipo)
         {
-            ladoBase = lad;
-            apotema = apot;
-            altura = alt;
+            LadoBase = lad;
+            Apotema = apot;
+            Altura = alt;
 
         }
 
         /// <summary>
         /// método sobreescrito para calcular el área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            double periBase = 5 * ladoBase;
-            areaAsignar(periBase * (altura + apotema));
+            double periBase = 5 * LadoBase;
+            return periBase * (Altura + Apotema);
         }
 
         /// <summary>
         /// método sobreescrito para calcular el volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            double areaBase = (5 * ladoBase * apotema) / 2;
-            volumenAsignar(areaBase * altura);
+            double areaBase = (5 * LadoBase * Apotema) / 2;
+            return areaBase * Altura;
         }
 
-        /// <summary>
-        /// Getter para la apotema
-        /// </summary>
-        /// <returns>double apotema</returns>
-        public double apotemaConsultar()
-        {
-            return apotema;
-        }
-
-        /// <summary>
-        /// Getter para el lado de la base
-        /// </summary>
-        /// <returns>double ladoBase</returns>
-        public double ladoBaseConsultar()
-        {
-            return ladoBase;
-        }
-
-        /// <summary>
-        /// Getter para la altura
-        /// </summary>
-        /// <returns>double altura</returns>
-        public double alturaConsultar()
-        {
-            return altura;
-        }
+        
     }
 }

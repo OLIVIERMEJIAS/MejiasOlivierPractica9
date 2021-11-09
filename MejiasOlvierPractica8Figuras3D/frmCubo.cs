@@ -34,10 +34,9 @@ namespace MejiasOlvierPractica8Figuras3D
             try
             {
                 Cubo cub = new Cubo(double.Parse(txtLadCub.Text), "Cubo");
-                cub.calcularArea();
-                cub.calcularVolumen();
-                txtResulCub.Text = cub.mensajeCalculos();
-                glob.historialCuboAgregar(cub);
+                cub.setDatosEnCadena($"Lado: {cub.getLado()}.");
+                txtResulCub.Text = cub.mensajeCalculos(cub.calcularArea(),cub.calcularVolumen());
+                glob.historialesAgregar(cub);
             }
             catch (FormatException ex)
             {

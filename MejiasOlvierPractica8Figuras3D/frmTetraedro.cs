@@ -35,10 +35,9 @@ namespace MejiasOlvierPractica8Figuras3D
             try
             {
                 Tetraedro tetra = new Tetraedro(double.Parse(txtArTet.Text), "Tetraedro Regular");
-                tetra.calcularArea();
-                tetra.calcularVolumen();
-                txtResulTet.Text = tetra.mensajeCalculos();
-                glob.historialTetraAgregar(tetra);
+                tetra.setDatosEnCadena($"Arista: {tetra.Arista}.");
+                txtResulTet.Text = tetra.mensajeCalculos(tetra.calcularArea(),tetra.calcularVolumen());
+                glob.historialesAgregar(tetra);
             }
             catch (FormatException ex)
             {

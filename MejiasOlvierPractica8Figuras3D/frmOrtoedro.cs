@@ -37,10 +37,9 @@ namespace MejiasOlvierPractica8Figuras3D
                 Ortoedro ortoe = new Ortoedro(double.Parse(txtLarOrt.Text),
                     double.Parse(txtAchOrt.Text), double.Parse(txtAltOrt.Text),
                     "Ortoedro");
-                ortoe.calcularArea();
-                ortoe.calcularVolumen();
-                txtResulOrt.Text = ortoe.mensajeCalculos();
-                glob.historialOrtoeAgregar(ortoe);
+                txtResulOrt.Text = ortoe.mensajeCalculos(ortoe.calcularArea(),ortoe.calcularVolumen());
+                ortoe.setDatosEnCadena($"Largo: {ortoe.Largo}. Ancho: {ortoe.Ancho}. Altura: {ortoe.Altura}.");
+                glob.historialesAgregar(ortoe);
             }
             catch (FormatException ex)
             {

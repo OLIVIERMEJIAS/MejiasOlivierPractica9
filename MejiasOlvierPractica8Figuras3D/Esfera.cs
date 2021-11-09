@@ -8,9 +8,15 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     class Esfera : Figura
     {
-        //atributo
         double radio;
-
+        /// <summary>
+        /// Propiedad del atributo double radio
+        /// </summary>
+        public double Radio
+        {
+            get => this.radio;
+            set => this.radio = value;
+        }
         /// <summary>
         /// Constructor de una instancia tipo Esfera
         /// </summary>
@@ -19,31 +25,25 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <param name="tipo"></param>
         public Esfera(double rad, string tipo) : base(tipo)
         {
-            radio = rad;
+            Radio = rad;
         }
         /// <summary>
         /// método sobreescrito del área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            areaAsignar(4 * System.Math.PI * Math.Pow(radio, 2));
+            return 4 * System.Math.PI * Math.Pow(Radio, 2);
         }
         /// <summary>
         /// método sobreescrito del volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            volumenAsignar((4 * System.Math.PI * Math.Pow(radio, 3)) / 3);
+            return (4 * System.Math.PI * Math.Pow(Radio, 3)) / 3;
         }
 
-        /// <summary>
-        /// Getter del radio
-        /// </summary>
-        /// <returns>double radio</returns>
-        public double radioConsultar()
-        {
-            return radio;
-        }
+        
+        
 
     }
 }

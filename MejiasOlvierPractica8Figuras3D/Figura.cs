@@ -9,9 +9,34 @@ namespace MejiasOlvierPractica8Figuras3D
     abstract class Figura
     {
         //atributos
-        double area;
-        double volumen;
+      
         string tipo;
+        string datosEnCadena;
+        /// <summary>
+        /// Devuelve el tipo, método Getter
+        /// </summary>
+        /// <returns>string tipo</returns>
+        public string getTipo()
+        {
+            return tipo;
+        }
+        /// <summary>
+        /// Getter para el atributo string datosEnCadena
+        /// </summary>
+        /// <returns></returns>
+        public string getDatosEnCadena()
+        {
+            return datosEnCadena;
+        }
+        /// <summary>
+        /// Setter para el atributo string datosEnCadena 
+        /// que guarda los datos esenciales en una cadena
+        /// </summary>
+        /// <param name="cadena"></param>
+        public void setDatosEnCadena(string cadena)
+        {
+            datosEnCadena = cadena;
+        }
 
         /// <summary>
         /// cosntruye una instancia Figura
@@ -19,72 +44,27 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <param name="tip"></param>
         public Figura(string tip)
         {
-            area = 0;
-            volumen = 0;
+            
             tipo = tip;
         }
         /// <summary>
         /// método abstracto
         /// </summary>
-        public abstract void calcularArea();
+        public abstract double calcularArea();
 
         /// <summary>
         /// método abstracto
         /// </summary>
-        public abstract void calcularVolumen();
+        public abstract double calcularVolumen();
         /// <summary>
         /// método virtual
         /// </summary>
         /// <returns></returns>
-        public virtual string mensajeCalculos()
+        public virtual string mensajeCalculos(double area,double volumen)
         {
             return $"El área de su figura es: {Math.Round(area,2)} cm2 y el volumen es : {Math.Round(volumen,2)} cm3";
         }
 
-        /// <summary>
-        /// Getter del área
-        /// </summary>
-        /// <returns>double area</returns>
-        public double areaConsultar()
-        {
-            return area;
-        }
-
-        /// <summary>
-        /// Getter del volumen
-        /// </summary>
-        /// <returns>double volumen</returns>
-        public double volumenConsultar()
-        {
-            return volumen;
-        }
-
-        /// <summary>
-        /// Getter del tipo de figura
-        /// </summary>
-        /// <returns>string tipo</returns>
-        public string tipoConsultar()
-        {
-            return tipo;
-        }
-
-        /// <summary>
-        /// Setter del área
-        /// </summary>
-        /// <remarks>Requiere un double area como argumento</remarks>
-        /// <param name="ar"></param>
-        public void areaAsignar(double ar)
-        {
-             area = ar;
-        }
-        /// <summary>
-        /// Setter del volumen
-        /// </summary>
-        /// <remarks>Requiere un double volumen como argumento</remarks>
-        /// <param name="vol"></param>
-        public void volumenAsignar(double vol)
-        {
-            volumen = vol;
-        }
+        
     }
 }

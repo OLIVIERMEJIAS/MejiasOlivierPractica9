@@ -8,8 +8,11 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     class Tetraedro : Figura
     {
-        //atributos
-        double arista;
+        /// <summary>
+        /// Propiedad del atributo double arista
+        /// </summary>
+        public double Arista { get; set; }
+        
 
         /// <summary>
         /// Construye un objeto tipo Tetraedro
@@ -20,33 +23,26 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <param name="tipo"></param>
         public Tetraedro(double arist, string tipo) : base(tipo)
         {
-            arista = arist;
+            Arista = arist;
 
         }
 
         /// <summary>
         /// método sobreescrito para calcular el área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            areaAsignar(Math.Sqrt(3) * Math.Pow(arista, 2));
+            return Math.Sqrt(3) * Math.Pow(Arista, 2);
         }
 
         /// <summary>
         /// método sobreescrito para calcular el volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            volumenAsignar((Math.Sqrt(2) * Math.Pow(arista, 3)) / 12);
+            return (Math.Sqrt(2) * Math.Pow(Arista, 3)) / 12;
         }
 
-        /// <summary>
-        /// Getter del atributo arista
-        /// </summary>
-        /// <returns>dobule arista</returns>
-        public double aristaConsultar()
-        {
-            return arista;
-        }
+        
     }
 }

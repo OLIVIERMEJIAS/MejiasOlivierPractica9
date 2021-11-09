@@ -36,10 +36,10 @@ namespace MejiasOlvierPractica8Figuras3D
             {
                 Cono con = new Cono(double.Parse(txtRadCon.Text), 
                     double.Parse(txtGenCon.Text),double.Parse(txtAltCon.Text), "Cono");
-                con.calcularArea();
-                con.calcularVolumen();
-                txtResulCon.Text = con.mensajeCalculos();
-                glob.historialConoAgregar(con);
+                con.setDatosEnCadena($"Radio: {con.getRadio()}. " +
+                    $"Generatriz: {con.getGeneratriz()}. Altura: {con.getAltura()}.");
+                txtResulCon.Text = con.mensajeCalculos(con.calcularArea(),con.calcularVolumen());
+                glob.historialesAgregar(con);
             }
             catch (FormatException ex)
             {

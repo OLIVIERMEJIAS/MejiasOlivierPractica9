@@ -34,9 +34,6 @@ namespace MejiasOlvierPractica8Figuras3D
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lvwHistorial
@@ -45,10 +42,7 @@ namespace MejiasOlvierPractica8Figuras3D
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7});
+            this.columnHeader4});
             this.lvwHistorial.HideSelection = false;
             this.lvwHistorial.Location = new System.Drawing.Point(31, 12);
             this.lvwHistorial.Name = "lvwHistorial";
@@ -74,22 +68,9 @@ namespace MejiasOlvierPractica8Figuras3D
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Dato # 1";
-            this.columnHeader4.Width = 113;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Dato # 2";
-            this.columnHeader5.Width = 118;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Dato # 3";
-            this.columnHeader6.Width = 98;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Dato # 4";
+            this.columnHeader4.Text = "Datos de Entrada                                                                 " +
+    "                ";
+            this.columnHeader4.Width = 445;
             // 
             // frmHistorial
             // 
@@ -111,8 +92,5 @@ namespace MejiasOlvierPractica8Figuras3D
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

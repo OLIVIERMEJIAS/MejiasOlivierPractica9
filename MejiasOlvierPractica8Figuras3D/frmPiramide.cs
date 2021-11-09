@@ -38,10 +38,11 @@ namespace MejiasOlvierPractica8Figuras3D
                 Piramide pira = new Piramide(double.Parse(txtApoBase.Text),
                     double.Parse(txtApoCara.Text), double.Parse(txtAltPir.Text), 
                     double.Parse(txtLadoBasePir.Text), "Pirámide");
-                pira.calcularArea();
-                pira.calcularVolumen();
-                txtResulPir.Text = pira.mensajeCalculos();
-                glob.historialPiraAgregar(pira);
+                pira.setDatosEnCadena($"Apotema de la base: {pira.ApotemaBase}. " +
+                    $"Apotema de una cara: {pira.ApotemaLado}. Altura: {pira.Altura}. " +
+                    $"Lado de la base: {pira.LadoBase}.");
+                txtResulPir.Text = pira.mensajeCalculos(pira.calcularArea(),pira.calcularVolumen());
+                glob.historialesAgregar(pira);
             }
             catch (FormatException ex)
             {

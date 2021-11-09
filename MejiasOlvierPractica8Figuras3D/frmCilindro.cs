@@ -36,10 +36,9 @@ namespace MejiasOlvierPractica8Figuras3D
             {
                 Cilindro cili = new Cilindro(double.Parse(txtRadCil.Text),
                     double.Parse(txtAltCil.Text), "Cilindro");
-                cili.calcularArea();
-                cili.calcularVolumen();
-                txtResulCil.Text = cili.mensajeCalculos();
-                glob.historialCiliAgregar(cili);
+                cili.setDatosEnCadena($"Radio: {cili.getRadio()}. Altura: {cili.getAltura()}.");
+                txtResulCil.Text = cili.mensajeCalculos(cili.calcularArea(), cili.calcularVolumen());
+                glob.historialesAgregar(cili);
             }
             catch (FormatException ex)
             {

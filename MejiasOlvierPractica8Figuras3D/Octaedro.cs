@@ -8,8 +8,15 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     class Octaedro : Figura
     {
-        //atributo
         double arista;
+        /// <summary>
+        /// Propiedad del atributo double arista
+        /// </summary>
+        public double Arista
+        {
+            get => this.arista;
+            set => this.arista = value;
+        }
 
         /// <summary>
         /// Construye una instancia tipo Octaedro
@@ -20,34 +27,27 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <param name="tipo"></param>
         public Octaedro(double arist,string tipo) : base(tipo)
         {
-            arista = arist;
+            Arista = arist;
 
         }
 
         /// <summary>
         /// método sobreescrito para calcular el área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            areaAsignar(2 * Math.Sqrt(3) * Math.Pow(arista, 2));
+            return 2 * Math.Sqrt(3) * Math.Pow(Arista, 2);
         }
 
         /// <summary>
         /// método sobreescrito para calcular el volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            volumenAsignar((Math.Sqrt(2) * Math.Pow(arista, 2)) / 3);
+            return (Math.Sqrt(2) * Math.Pow(Arista, 2)) / 3;
         }
 
-        /// <summary>
-        /// Getter de la arista
-        /// </summary>
-        /// <returns>double arista</returns>
-        public double aristaConsultar()
-        {
-            return arista;
-        }
+        
 
     }
 }

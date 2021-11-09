@@ -35,10 +35,9 @@ namespace MejiasOlvierPractica8Figuras3D
             try
             {
                 Octaedro octa = new Octaedro(double.Parse(txtArOct.Text), "Octaedro Regular");
-                octa.calcularArea();
-                octa.calcularVolumen();
-                txtResulOct.Text = octa.mensajeCalculos();
-                glob.historialOctaAgregar(octa);
+                txtResulOct.Text = octa.mensajeCalculos(octa.calcularArea(),octa.calcularVolumen());
+                octa.setDatosEnCadena($"Arista: {octa.Arista}.");
+                glob.historialesAgregar(octa);
             }
             catch (FormatException ex)
             {

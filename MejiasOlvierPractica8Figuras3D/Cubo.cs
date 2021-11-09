@@ -25,22 +25,22 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <summary>
         /// método sobreescrito del cálculo del área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            areaAsignar(6* Math.Pow(lado, 2));
+            return 6 * Math.Pow(lado, 2);
         }
         /// <summary>
         /// método sobreescrito del cálculo del volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            volumenAsignar(Math.Pow(lado, 3));
+            return Math.Pow(lado, 3);
         }
         /// <summary>
         /// Getter de la medida del lado
         /// </summary>
         /// <returns>double lado</returns>
-        public double ladoConsultar()
+        public double getLado()
         {
             return lado;
         }

@@ -37,10 +37,10 @@ namespace MejiasOlvierPractica8Figuras3D
                 Prisma pris = new Prisma(double.Parse(txtLabBasPris.Text),
                     double.Parse(txtApoBasePris.Text), double.Parse(txtAltPris.Text),
                    "Prisma Recto");
-                pris.calcularArea();
-                pris.calcularVolumen();
-                txtResulPrisma.Text = pris.mensajeCalculos();
-                glob.historialPrisAgregar(pris);
+                pris.setDatosEnCadena($"Lado de la Base: {pris.LadoBase}. " +
+                    $"Apotema de la base: {pris.Apotema}. Altura: {pris.Altura}.");
+                txtResulPrisma.Text = pris.mensajeCalculos(pris.calcularArea(),pris.calcularVolumen());
+                glob.historialesAgregar(pris);
             }
             catch (FormatException ex)
             {

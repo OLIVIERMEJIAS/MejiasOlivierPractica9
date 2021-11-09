@@ -35,10 +35,9 @@ namespace MejiasOlvierPractica8Figuras3D
             try
             {
                 Esfera esfe = new Esfera(double.Parse(txtRadEsf.Text), "Esfera");
-                esfe.calcularArea();
-                esfe.calcularVolumen();
-                txtResulEsf.Text = esfe.mensajeCalculos();
-                glob.historialEsfeAgregar(esfe);
+                txtResulEsf.Text = esfe.mensajeCalculos(esfe.calcularArea(),esfe.calcularVolumen());
+                esfe.setDatosEnCadena($"Radio : {esfe.Radio}.");
+                glob.historialesAgregar(esfe);
             }
             catch(FormatException ex)
             {

@@ -8,10 +8,18 @@ namespace MejiasOlvierPractica8Figuras3D
 {
     class Ortoedro : Figura
     {
-        //atributos
-        double largo;
-        double ancho;
-        double altura;
+        /// <summary>
+        /// Propiedad del atributo double largo
+        /// </summary>
+        public double Largo { get; set; }
+        /// <summary>
+        /// Propiedad del atributo double ancho
+        /// </summary>
+        public double Ancho { get; set; }
+        /// <summary>
+        /// Propiedad del atributo double altura
+        /// </summary>
+        public double Altura { get; set; }
 
         /// <summary>
         /// Genera un objeto tipo Ortoedro
@@ -25,52 +33,27 @@ namespace MejiasOlvierPractica8Figuras3D
         /// <param name="tipo"></param>
         public Ortoedro(double larg, double anch, double alt,string tipo) : base(tipo)
         {
-            largo = larg;
-            ancho = anch;
-            altura = alt;
+            Largo = larg;
+            Ancho = anch;
+            Altura = alt;
 
         }
 
         /// <summary>
         /// método sobreescrito para calcular el área
         /// </summary>
-        public override void calcularArea()
+        public override double calcularArea()
         {
-            areaAsignar(2*((largo * ancho)+(largo * altura)+(ancho * altura)));
+            return 2*((Largo * Ancho)+(Largo * Altura)+(Ancho * Altura));
         }
         /// <summary>
         /// método sobre escrito para calcular el volumen
         /// </summary>
-        public override void calcularVolumen()
+        public override double calcularVolumen()
         {
-            volumenAsignar(largo * ancho * altura);
+            return Largo * Ancho * Altura;
         }
-        /// <summary>
-        /// Getter del largo
-        /// </summary>
-        /// <returns>double largo</returns>
-        public double largoConsultar()
-        {
-            return largo;
-        }
-
-        /// <summary>
-        /// Getter del ancho
-        /// </summary>
-        /// <returns>double ancho</returns>
-        public double anchoConsultar()
-        {
-            return ancho;
-        }
-
-        /// <summary>
-        /// Getter de la altura
-        /// </summary>
-        /// <returns>double altura</returns>
-        public double alturaConsultar()
-        {
-            return altura;
-        }
+      
 
     }
 }
